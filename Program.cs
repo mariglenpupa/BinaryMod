@@ -45,8 +45,8 @@ namespace Smth
                                 // Check for strings from the array & replace with new values.
                                 for (int k = rep.Length / 2; k > 0; k--)
                                 {
-                                    if (method.Body.Instructions[i].Operand.ToString() == rep[0, 0]) 
-                                        method.Body.Instructions[i].Operand = rep[0, 1];
+                                    if (method.Body.Instructions[i].Operand.ToString() == rep[k - 1, 0]) 
+                                        method.Body.Instructions[i].Operand = rep[k - 1, 1];
                                 }
                             }
                         }
